@@ -1,0 +1,10 @@
+$font: 'Roboto', sans-serif;
+
+* {
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+@import '_header';
+@import '_main';
+@import '_footer';

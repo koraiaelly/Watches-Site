@@ -1,0 +1,91 @@
+@mixin flex-default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper {
+    width: 1160px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    padding-top: 30px;
+    @include flex-space-between;
+}
+
+.header-right {
+    display: flex;
+}
+
+.logo {
+    margin: 0;
+}
+
+.navigation {
+    @include flex-default;
+}
+
+.link {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #555248;
+    margin-right: 65px;
+    text-decoration: none;
+}
+
+.wishlist-counter {
+    display: block;
+    border-radius: 50%;
+    background-color: #e6c8b4;
+    top: -3px;
+    right: -7px;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 12px;
+    text-align: center;
+    color: #1b1a17;
+  }
+
+.active-link {
+    color: #a69876;
+}
+  
+.link:hover {
+    color: #a69876;
+}
+
+.link:last-child {
+    margin-right: 0;
+}
+  
+.icon-link {
+    position: relative;
+    margin-right: 25px;
+}
+  
+.icon-btn {
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+    margin-right: 25px;
+}
+  
+.icon-link:last-child {
+    margin-right: 0;
+}
+  
